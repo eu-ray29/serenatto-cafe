@@ -1,0 +1,43 @@
+@import './_variaveis'
+
+.cards
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 3rem 0
+    gap: $gap-xxl
+    margin-top: 3rem
+    margin-bottom: 3rem
+    h2
+        color: $marrom-escuro
+        font-size: $h3
+    .card-container
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: $gap-xl
+        .card
+            border: 1px solid $marrom-claro
+            width: 350px
+            height: 480px
+            border-radius: .5rem
+            
+            &:hover
+                opacity: 70%
+                color: black
+
+            img
+                width: 100%
+            &-conteudo
+                display: flex
+                flex-direction: column
+                gap: $gap-medio
+                padding: $padding-xl 1.5rem
+            &-conteudo-titulo
+                color: $marrom-escuro
+                font-weight: 700
+                font-size: $h5
+            &-conteudo-texto
+                color: $cinza-medio
+                font-size: $texto-small

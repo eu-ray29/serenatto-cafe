@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho-navbar">
+      <img src="./assets/logo-maior.png" alt="logo do serenatto café">
+      <ul class="cabecalho-navbar-lista">
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Sobre</a>
+        </li>
+        <li>
+          <a href="#">Contato</a>
+        </li>
+        <li>
+          <label class="toggle">
+            <input type="checkbox">
+          </label>
+        </li>
+        <li><span>Modo noturno</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="banner banner1">
+      <img src="assets/favicon.png" alt>
+      <div class="banner-conteudo">
+        <h2 class="banner-conteudo-titulo">
+          Sua pausa <br> para <span> desfrutar <br> a vida </span>
+        </h2>
+        <p class="banner-conteudo-texto">
+          Boas-vindas ao <span> Bistrô Serenatto! </span> <br>
+          Um ambiente aconchegante e acolhedor <br> para apreciar um bom café.
+        </p>
+      </div>
+    </div>
+    <div class="cards">
+      <h2>Nossos Serviços</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/cafe-e-bistro.png" alt>
+          <div class="card-conteudo">
+            <h3 class="card-conteudo-titulo">
+              Café & Bistrô
+            </h3>
+            <p class="card-conteudo-texto">
+              Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos salgados e sobremesas. Uma
+              excelente opção para quem busca um lugar tranquilo e aconchegante.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/buffet.png" alt>
+          <div class="card-conteudo">
+            <h3 class="card-conteudo-titulo">
+              Buffet
+            </h3>
+            <p class="card-conteudo-texto">
+              Buffet e catering personalizado para eventos, produções e celebrações. Com um menu variado e adaptável às
+              preferências do cliente, atendimento atencioso e profissional.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/delivery.png" alt>
+          <div class="card-conteudo">
+            <h3 class="card-conteudo-titulo">
+              Delivery
+            </h3>
+            <p class="card-conteudo-texto">
+              Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos produtos. Com o mesmo cardápio
+              variado de sempre, sem perder nosso sabor e padrão de qualidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner banner2">
+      <div class="banner-conteudo">
+        <h2 class="banner-titulo titulo2">
+          Portas abertas para todos os públicos.
+        </h2>
+        <p class="banner-texto">
+          Nosso espaço é aconchegante, pet friendly, preparado para receber crianças e pessoas com deficiência. Também
+          oferecemos ambiente de coworking!
+        </p>
+      </div>
+    </div>
+
+  </main>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
