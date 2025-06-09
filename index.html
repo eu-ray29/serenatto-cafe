@@ -33,7 +33,7 @@
     </nav>
   </header>
   <main class="container">
-    <div class="banner banner1">
+    <section class="banner banner1">
       <img src="assets/favicon.png" alt>
       <div class="banner-conteudo">
         <h2 class="banner-conteudo-titulo">
@@ -44,8 +44,8 @@
           Um ambiente aconchegante e acolhedor <br> para apreciar um bom café.
         </p>
       </div>
-    </div>
-    <div class="cards">
+    </section>
+    <section class="cards">
       <h2>Nossos Serviços</h2>
       <div class="card-container">
         <div class="card">
@@ -85,8 +85,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="banner banner2">
+    </section>
+    <section class="banner banner2">
       <div class="banner-conteudo">
         <h2 class="banner-titulo titulo2">
           Portas abertas para todos os públicos.
@@ -96,9 +96,71 @@
           oferecemos ambiente de coworking!
         </p>
       </div>
-    </div>
-
+    </section>
+    <section class="produtos">
+      <h2>Nossos Produtos</h2>
+      <div class="produto-container">
+        <div class="produto">
+          <img src="assets/cafe-tradicional.png" alt="">
+          <h3 class="protuto-titulo">Cafés Tradicionais</h3>
+        </div>
+        <div class="produto">
+          <img src="assets/cafe-especial.png" alt="">
+          <h3 class="protuto-titulo">Cafés Especiais</h3>
+        </div>
+        <div class="produto">
+          <img src="assets/smoothies.png" alt="">
+          <h3 class="protuto-titulo">Smoothies e Vitaminas</h3>
+        </div>
+        <div class="produto">
+          <img src="assets/paes.png" alt="">
+          <h3 class="protuto-titulo">Pães e Focaccias</h3>
+        </div>
+        <div class="produto">
+          <img src="assets/bolo.png" alt="">
+          <h3 class="protuto-titulo">Doces</h3>
+        </div>
+        <div class="produto">
+          <img src="assets/quiche.png" alt="">
+          <h3 class="protuto-titulo">Salgados</h3>
+        </div>
+      </div>
+    </section>
+    <section class="banner banner3">
+    </section>
+    <section class="formulario">
+      <div class="formulario-container">
+        <h2 class="formulario-titulo">Entre em contato!</h2>
+        <form action="/pagina-processa-dados-do-form" method="post">
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Nome" />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" id="mail" placeholder="Email" />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" id="mail" placeholder="Email" />
+          </div>
+          <div>
+            <label for="preferencias-contato"></label>
+            <select id="preferencias-contato" name="cars">
+              <option value="Preferências de contato">Preferências de contato</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Email">Email</option>
+              <option value="Telefone">Telefone</option>
+            </select>
+          </div>
+        </form>
+        <button class="formulario-botao">Enviar</button>
+      </div>
+    </section>
   </main>
+  <footer class="rodape">
+    <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+  </footer>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
 </body>

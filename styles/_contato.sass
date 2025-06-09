@@ -1,0 +1,60 @@
+.formulario
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 6rem 0
+
+
+    .formulario-container
+        width: 650px
+        display: flex
+        flex-direction: column
+        padding: 3rem
+        border: solid 1px $cinza-claro
+        border-radius: 10px
+        height: 400px
+        gap: 1rem
+
+        .formulario-titulo
+            color: #462E09
+
+        form
+            display: flex
+            flex-direction: column
+            margin: 1rem 0
+            gap: 1rem
+
+            input 
+                height: 20px
+                padding: .5rem
+                margin: 7px 0
+                width: 630px
+                border: 1px solid $cinza-claro
+                border-radius: 5px
+                
+                &::placeholder
+                    color: $cinza-medio
+                    font-size: 1.2rem
+
+            select
+                height: 34px
+                padding: 1.2rem
+                margin: 7px 0
+                width: 650px
+                font-size: 1.5rem
+                border: 1px solid $cinza-claro
+                background-color: white
+                border-radius: 5px
+                option
+                    color: $cinza-medio
+                    font-size: 1rem
+
+        .formulario-botao
+            border: none
+            border-radius: 5px
+            color: white
+            font-size: 1.2rem
+            font-weight: 700
+            padding: 1.2rem
+            background-color: $marrom-medio
