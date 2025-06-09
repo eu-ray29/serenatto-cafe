@@ -1,15 +1,13 @@
 @import '../base/_variaveis'
+@import '../base/_mixins'
 .formulario
     width: 100%
-    display: flex
-    align-items: center
-    justify-content: center
+    @include flexbox
     padding: 6rem 0
 
     .formulario-container
         width: 650px
-        display: flex
-        flex-direction: column
+        @include flexbox($align:none,$direction:column)
         padding: 3rem
         border: solid 1px $cinza-claro
         border-radius: 10px
@@ -20,8 +18,7 @@
             color: #462E09
 
         form
-            display: flex
-            flex-direction: column
+            @include flexbox($direction:column)
             margin: 1rem 0
             gap: 1rem
 

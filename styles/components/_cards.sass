@@ -1,9 +1,7 @@
 @import '../base/_variaveis'
+@import '../base/_mixins'
 .cards
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
+    @include flexbox($direction: column )
     padding: 3rem 0
     gap: $gap-xxl
     margin-top: 3rem
@@ -12,9 +10,7 @@
         color: $marrom-escuro
         font-size: $h3
     .card-container
-        display: flex
-        align-items: center
-        justify-content: center
+        @include flexbox
         gap: $gap-xl
         .card
             border: 1px solid $marrom-claro
@@ -29,8 +25,7 @@
             img
                 width: 100%
             &-conteudo
-                display: flex
-                flex-direction: column
+                @include flexbox($align:start,$direction: column)
                 gap: $gap-medio
                 padding: $padding-xl 1.5rem
             &-conteudo-titulo

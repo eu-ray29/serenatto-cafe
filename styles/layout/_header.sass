@@ -1,22 +1,22 @@
 @import '../base/_variaveis'
+@import '../base/_mixins'
 
 .cabecalho-navbar
-    display: flex
-    justify-content: space-around
+    @include flexbox($justify:space-around)
     padding: .5rem 3rem
 
     img
         width: 250px
     &-lista
-        display: flex
+        @include flexbox( $align: center)
         gap: 1rem
         list-style-type: none
-        align-items: center
         margin-right: 1rem
         li
             font-size: $texto
             color:$cinza-medio
-            display: flex
+            @include flexbox
+            
             align-items: bottom
             a
                 text-decoration: none

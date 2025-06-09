@@ -1,12 +1,11 @@
 @import '../base/_variaveis'
+@import '../base/_mixins'
 .banner
     height: 80vh
-    display: flex
-    flex-direction: column
+    @include flexbox($align:start , $direction:column)
     gap: 1rem
     padding: 2rem 0
-    align-items: start
-    justify-content: center
+    
 
     img
         width: 100px

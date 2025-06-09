@@ -1,8 +1,7 @@
 @import '../base/_variaveis'
+@import '../base/_mixins'
 .produtos
-    display: flex
-    flex-direction: column
-    justify-content: center
+    @include flexbox($direction:column)
     align-items: center
     gap: $gap-xxl
     h2
@@ -15,10 +14,7 @@
         grid-template-columns: 1fr 1fr 1fr
         gap: $gap-xxl
         .produto
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
+            @include flexbox($direction:column)
             width: 100%
             height: 100%
             gap: $gap-xl
